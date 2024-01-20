@@ -1,11 +1,6 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { pick, omit } = require("lodash")
-const colors = require("tailwindcss/colors")
-const defaultTheme = require("tailwindcss/defaultTheme")
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
+  darkMode: "media",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -17,69 +12,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
+        accent: {
+          50: "#f4fee7",
+          100: "#e7fccb",
+          200: "#cffa9c",
+          300: "#aef363",
+          400: "#8fe833",
+          500: "#69c113",
+          600: "#54a40c",
+          700: "#417d0e",
+          800: "#366311",
+          900: "#2f5413",
+          950: "#152e05",
         },
-      },
-      fontFamily: {
-        body: [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "system-ui",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "Noto Sans",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Noto Color Emoji",
-        ],
-        sans: [
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "system-ui",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "Noto Sans",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Noto Color Emoji",
-        ],
-      },
-      borderWidth: {
-        DEFAULT: "1px",
-        0: "0",
-        2: "2px",
-        3: "3px",
-        4: "4px",
-        6: "6px",
-        8: "8px",
-      },
-      minHeight: {
-        ...defaultTheme.height,
-      },
-      minWidth: {
-        ...defaultTheme.width,
+        brand: {
+          50: "#eefffb",
+          100: "#c6fff4",
+          200: "#8effec",
+          300: "#4dfbe1",
+          400: "#19e8cf",
+          500: "#00bfab",
+          600: "#00a497",
+          700: "#02837a",
+          800: "#086761",
+          900: "#0c5550",
+          950: "#003433",
+        },
       },
     },
   },
